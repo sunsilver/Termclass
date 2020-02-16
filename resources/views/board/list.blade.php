@@ -1,26 +1,20 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+@extends('layouts.master')
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Laravel</title>
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+@section('head')
+<link rel="stylesheet" href="{{asset('css/list.css')}}" />
+<link rel="stylesheet" href="{{asset('css/board.css')}}" />
+@include('layouts.head')
+@endsection
 
 
-</head>
 
-<body>
+@section('content')
 
     <div class="content">
-        <table>
+        <table class ="table table-bordered">
             <tr>
                 <th>Title</th>
                 <th>Content
-                <th>
             <tr>
                 @foreach($articles as $article)
             <tr>
@@ -30,9 +24,23 @@
 
             @endforeach
         </table>
-        <button onclick="window.location='{{url('board/create_form')}}'">글쓰기</button>
-    </div>
+<div class="button">
+        <button type="button" class="btn btn-secondary" onclick="window.location='{{url('board/create_form')}}'">글쓰기</button>
+</div>
     </div>
 </body>
 
-</html>
+<div id="background-wrap" >
+    <div class="bubble x1"></div>
+    <div class="bubble x2"></div>
+    <div class="bubble x3"></div>
+    <div class="bubble x4"></div>
+    <div class="bubble x5"></div>
+    <div class="bubble x6"></div>
+    <div class="bubble x7"></div>
+    <div class="bubble x8"></div>
+    <div class="bubble x9"></div>
+    <div class="bubble x10"></div>
+</div>
+
+@endsection

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Schedule;
 
 class BoardController extends Controller
 {
@@ -76,6 +77,7 @@ class BoardController extends Controller
      */
     public function show($id)
     {
+        //$article라는 이름의 변수에다가 articles 테이블의 id 컬럼에서 $id (얘가 현재 로그인한 사람 아이디 값) 의 모든 정보를 갖고온다
         $article = DB::table('articles')->where('id',$id)->first();
 
         // return $article;
@@ -118,5 +120,17 @@ class BoardController extends Controller
     {
         DB::table('articles')->where('id',$id)->delete();
         return redirect('board/list');
+    }
+
+    public function task_store(Request $request)
+    {
+        Schedule::create($request->all());
+        return redirect('schedule/main');
+    }
+
+    public function task_index()
+    {
+        $tasks = Schedule::all();
+        return view('schedule/main')->with('tasks',$tasks);
     }
 }
