@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    @yield('mdb')
+    @include('schedule.mdb')
+
     <!-- Bootstrap core JavaScript -->
     <script src="{{asset('css/vendor/jquery/jquery.min.js')}}"></script>
     <script src="{{asset('css/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
@@ -16,28 +17,28 @@
 
     <link href="{{asset('css/resume.min.css')}}" rel="stylesheet">
 
+    <link href="{{asset('css/blog.css')}}" rel="stylesheet">
+
 </head>
 
 
 <body id="page-top">
 
-    <div class="container-fluid p-0">
-        <hr class="m-0">
+    <div class="container">
 
-        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="openMarket">
-            <div class="my-auto">
-                <h3 class="openMarket mb-1">Schedule Calender</h3>
-                <div class="resume-item d-flex flex-column flex-md-row mb-3">
-                    <div class="resume-content mr-auto col-12">
-
-                    @include('schedule.index')
-
-                    </div>
-                </div>
-            </div>
-            
+        <section class="Calender" id="openMarket">
+            <h3 class="openMarket mb-1">Schedule Calender</h3>
+            @include('schedule.index')
         </section>
 
-        </div>
-        </body>
+        <section class="Calender" id="openMarket">
+            <h3 class="openMarket mb-1">Schedule Add</h3>
+            @include('schedule.add')
+        </section>
+
+
+    </div>
+
+</body>
+
 </html>

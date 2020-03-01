@@ -1,17 +1,18 @@
 
 <form action="{{ route('tasks.store') }}" method="post">
   {{ csrf_field() }}
-  Task name:
+  Title:
   <br />
-  <input type="text" name="name" />
+  <!-- name이 백한테 넘겨주는 거  -->
+  <input type="text" name="title" />
   <br /><br />
-  Task description:
+  Contents:
   <br />
-  <textarea name="description"></textarea>
+  <textarea name="content"></textarea>
   <br /><br />
-  Start time:
+  Date:
   <br />
-  <input type="text" name="task_date" class="date" placeholder="날짜선택" />
+  <input type="text" name="date" class="date" placeholder="날짜선택" />
 
   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>

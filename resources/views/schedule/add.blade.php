@@ -1,8 +1,7 @@
 <div class="card">
 
   <div class="card-body">
-    <p class="card-title" style="font-size: 1.5rem;">Slime Open Market Calendar</p>
-    <p class="card-text">Add Schedule and Make up Our Slime Open Market Calendar !</p>
+    <p class="card-text">Add Schedule !</p>
     
 
 
@@ -35,7 +34,7 @@
           <div class="col">
             <!-- Material input -->
             <div class="md-form mt-0">
-              <input type="text" name="name" class="form-control" placeholder="Task Name">
+              <input type="text" name="title" class="form-control" placeholder="Task Name">
             </div>
           </div>
           <!-- Grid column -->
@@ -44,7 +43,7 @@
           <div class="col">
             <!-- Material input -->
             <div class="md-form mt-0">
-              <input type="text" class="date form-control" name="task_date" placeholder="날짜 선택">
+              <input type="text" class="date form-control" name="date" placeholder="날짜 선택">
 
               <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
               <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
@@ -63,7 +62,7 @@
       <!-- Material form grid -->
         <!-- Material input -->
         <div class="md-form form-group mt-5">
-          <input type="text" class="form-control" name="description" placeholder="Task Description">
+          <input type="text" class="form-control" name="content" placeholder="Task Description">
         </div>
       
 
