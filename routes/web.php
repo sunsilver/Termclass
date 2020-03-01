@@ -27,9 +27,7 @@ Route::get('/index', function () {
     return view('index');
 });
 
-Route::get('schedule/main', function () {
-    return view('schedule/main');
-});
+
 
 Route::get('/Auth/register', function () {
     return view('Auth.register');
@@ -59,4 +57,10 @@ Route::post('/task_store', 'BoardController@task_store');
 
 Route::get('/about','IndexController@about')->name('about');
 
-Route::get('/schedule/Calender', 'IndexController@task_index');
+// Route::get('/schedule/Calender', 'IndexController@task_index');
+
+// Route::get('schedule/main', 'TaskController@task_index');
+
+Route::get('schedule/main', 'TaskController@index');
+
+Route::resource('tasks', 'TaskController');
