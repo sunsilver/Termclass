@@ -63,4 +63,8 @@ Route::get('/about','IndexController@about')->name('about');
 
 Route::get('schedule/main', 'TaskController@index')->name('task');
 
+Route::get('schedule/create', function () {
+    return view('schedule.create');
+});
+
 Route::resource('tasks', 'TaskController');

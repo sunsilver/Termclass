@@ -1,29 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<form action="{{ route('tasks.store') }}" method="post">
-  {{ csrf_field() }}
-  Title:
-  <br />
-  <!-- name이 백한테 넘겨주는 거  -->
-  <input type="text" name="title" />
-  <br /><br />
-  Contents:
-  <br />
-  <textarea name="content"></textarea>
-  <br /><br />
-  Date:
-  <br />
-  <input type="text" name="date" class="date" placeholder="날짜선택" />
+<head>
+    @include('schedule.mdb')
 
-  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
-  <script>
-      $('.date').datepicker({
-          autoclose: true,
-          dateFormat: "yy-mm-dd"
-      });
-  </script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{asset('css/vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{asset('css/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{{asset('css/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="asset{{('js/resume.min.js')}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('css/calendar.css')}}">
+
+    <link href="{{asset('css/resume.min.css')}}" rel="stylesheet">
+
+    <link href="{{asset('css/blog.css')}}" rel="stylesheet">
+
+</head>
 
 
-  <br /><br />
-  <input type="submit" value="Save" />
-</form>
+<body id="page-top">
+
+    <div class="container">
+
+        <section class="Add" id="">
+            <h3 class="openMarket mb-1">Schedule Add</h3>
+            @include('schedule.add')
+        </section>
+
+    </div>
+
+</body>
+
+</html>

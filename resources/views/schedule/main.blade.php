@@ -26,15 +26,11 @@
 
     <div class="container">
 
-        <section class="Calender" id="openMarket">
+        <section class="Calender" id="">
             <h3 class="openMarket mb-1">Schedule Calender</h3>
             @include('schedule.index')
         </section>
 
-        <section class="Calender" id="openMarket">
-            <h3 class="openMarket mb-1">Schedule Add</h3>
-            @include('schedule.add')
-        </section>
 
 
     </div>
