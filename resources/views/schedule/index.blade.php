@@ -23,7 +23,7 @@
                 {
                     title : '{{ $task->title }}',
                     start : '{{ $task->date }}',
-                    url : '{{ route('tasks.edit', $task->id) }}'
+                    url : '{{ route('tasks.show', $task->id) }}'
                 },
                 @endforeach
             ]

@@ -63,8 +63,16 @@ Route::get('/about','IndexController@about')->name('about');
 
 Route::get('schedule/main', 'TaskController@index')->name('task');
 
-Route::get('schedule/create', function () {
-    return view('schedule.create');
+Route::post('schedule/view', function () {
+    return view('schedule.view');
 });
+
+Route::post('schedule/edit_form/{id}', function () {
+    return view('schedule.edit_form');
+});
+
+// Route::get('schedule/edit_form/{id}', 'TaskController@edit');
+
+// Route::delete('tasks/{id}', 'TaskController@destroy');
 
 Route::resource('tasks', 'TaskController');

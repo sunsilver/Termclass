@@ -59,7 +59,13 @@ class TaskController extends Controller
      */
     public function show($id)
     {
-        //
+        // return $id;
+        // $tasks = Schedule::all();
+        $task = Schedule::all()->where('id',$id)->first();
+
+        // return $article;
+
+        return view('schedule.view')->with('task', $task);
     }
 
     /**
@@ -70,7 +76,9 @@ class TaskController extends Controller
      */
     public function edit($id)
     {
-        //
+        return $id;
+        $task = Schedule::all()->where('id',$id)->first();
+        return view('schedule.edit_form')->with('task',$task);
     }
 
     /**
@@ -93,6 +101,8 @@ class TaskController extends Controller
      */
     public function destroy($id)
     {
-        //
+        // return $id;
+        Schedule::where('id',$id)->delete();
+        return redirect('schedule/main');
     }
 }

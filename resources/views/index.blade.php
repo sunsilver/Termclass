@@ -3,127 +3,76 @@
 @section('head')
 @include('layouts.head')
 <link href="https://fonts.googleapis.com/css?family=Poppins:900" rel="stylesheet">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="{{asset('css/templatemo-softy-pinko.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('css/font-awesome.css')}}">
 @endsection
 
 @section('content')
-<div class="columns-bg">
 
-    <div class="container-right">
-      
-        <!-- <div class="col-sm-12 offset-sm-0 col-md-8 offset-md-6"> -->
-        <div class="tm-section-text-container">
-            <i class="tm-text-white">
-                <h1 class="text-uppercase tm-text-primary tm-site-name">
-                <a href="{{ url('schedule/main') }}" style="color:#bcb4b2; margin-left: 8%;">Scheduler</a>
-                </h1>
-            </i>
-        </div>
-        <!-- </div> -->
-    </div>
-    
 
-    <div class="container-left">
-        <!-- <div class="col-md-6"> -->
-        <div class="tm-section-text-container">
-            <i class="tm-text-white">
-                <h1 class="text-uppercase tm-text-primary tm-site-name">
-                <a href="{{ url('board/list') }}" style="color:white; margin-left: 29%;">Blog</a>
-                
-                </h1>
-            </i>
+<!-- ***** Home Parallax Start ***** -->
+<section class="mini" id="work-process" style="height:100%;">
+    <div class="mini-content" style="height:100%;">
+        <div class="container" style="height:100%;">
+            <div class="row">
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="info">
+                        <h3 style="color:navy; font-weight:bolder;">WORK PLACE</h3>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- ***** Mini Box Start ***** -->
+            <div class="row">
+                <div class="col-6" style="margin-left:1%; margin-top:6%;">
+                    <a href="{{ url('board/list') }}" class="mini-box" style="background-color:#0f62a7;">
+                        <i><img src="{{asset('image/diary.png')}}" style="height:40px;" alt=""></i>
+                        <strong style="color:white;">Blog</strong>
+                    </a>
+                </div>
+                <div class="col-6" style="margin-left:1%; margin-top:6%;">
+                    <a href="{{ url('schedule.main') }}" class="mini-box" style="background-color:#0f62a7;">
+                        <i><img src="{{asset('image/event.png')}}" style="height:40px;" alt=""></i>
+                        <strong style="color:white;">Schedule</strong>
+                    </a>
+                </div>
+
+            </div>
+            <!-- ***** Mini Box End ***** -->
         </div>
-        <!-- </div> -->
     </div>
+    <h3 class="features-title" style="align-items: center;
+display: flex;
+justify-content: center; color:#0f62a7;">A dream written down with a date becomes a goal.<br>
+    A goal broken down becomes a plan.<br>
+    A plan backed by action makes your dream come true.
+
+    – Greg S. Reid</h5>
+</section>
+
 
 </div>
 
+<!-- ***** Home Parallax End ***** -->
 
 
-<!-- Contact -->
-<!-- <section id="contact" class="tm-section-contact">
-        <div class="row tm-contact-section">
-          <div class="col-md-6 px-0">
-            <div class="tm-bg-white-alpha tm-contact-left">
-              <div class="media mb-5">
-                <a href="#" class="tm-contact-link">
-                  <span class="tm-contact-icon-container">
-                    <span class="tm-contact-icon-container-inner">
-                      <i class="fas fa-phone tm-contact-icon tm-phone-icon"></i>
-                    </span>
-                  </span>
-                  <span class="media-body"> 010-020-0340 </span>
-                </a>
-              </div>
-              <div class="media mb-5">
-                <a href="mailto:" class="tm-contact-link">
-                  <span class="tm-contact-icon-container">
-                    <span class="tm-contact-icon-container-inner">
-                      <i class="fas fa-envelope tm-contact-icon"></i>
-                    </span>
-                  </span>
-                  <span class="media-body"> info@company.com </span>
-                </a>
-              </div>
-              <div class="media">
-                <a href="" class="tm-contact-link">
-                  <span class="tm-contact-icon-container">
-                    <span class="tm-contact-icon-container-inner">
-                      <i class="fas fa-map-marker-alt tm-contact-icon"></i>
-                    </span>
-                  </span>
-                  <span class="media-body">
-                    6120 Suspendisse ultricies<br />Scelerisque tellus, ID
-                    10260<br />Magna aliquet porttitor
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 px-0">
-            <div class="tm-contact-form-container">
-              <form action="index.html" method="POST" class="tm-contact-form">
-                <div class="form-group">
-                  <input
-                    type="text"
-                    id="contact_name"
-                    name="contact_name"
-                    class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
-                    placeholder="Your Name"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <input
-                    type="email"
-                    id="contact_email"
-                    name="contact_email"
-                    class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
-                    placeholder="Email"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <textarea
-                    rows="4"
-                    id="contact_message"
-                    name="contact_message"
-                    class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
-                    placeholder="Message"
-                    required
-                  ></textarea>
-                </div>
-                <div class="text-right">
-                  <button type="submit" class="btn tm-btn-submit rounded-0">
-                    Send
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section> -->
+@endsection
 
+@section('footer')
+
+<!-- Bootstrap -->
+<script src="{{asset('js/popper.js')}}"></script>
+<script src="{{asset('js/bootstrap.min.js')}}"></script>
+
+<!-- Plugins -->
+<script src="{{asset('js/scrollreveal.min.js')}}"></script>
+<script src="{{asset('js/waypoints.min.js')}}"></script>
+<script src="{{asset('js/jquery.counterup.min.js')}}"></script>
+<script src="{{asset('js/imgfix.min.js')}}"></script>
 
 
 @endsection
