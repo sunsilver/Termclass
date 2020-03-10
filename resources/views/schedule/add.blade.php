@@ -24,6 +24,8 @@
 
 
       <form action="{{ route('tasks.store') }}" method="post">
+      <!-- @method ( 'PUT')
+      @crsf -->
           {{ csrf_field() }}
                 
                 <!-- Material form grid -->

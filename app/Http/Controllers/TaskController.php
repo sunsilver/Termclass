@@ -44,9 +44,10 @@ class TaskController extends Controller
         // return $request->all();;
         // 테이블을 모델화 시킨 스케줄을 새로운 데이터를 추가해줄건데 = 크리에잇
         // input태그에서 적은 것이 리퀘스트로 담긴다
+        // return $request;
         Schedule::create($request->all());
 
-        return view('schedule.create');
+        return view('schedule/create');
         //리다이렉트로 돌아간다
         // return redirect()->route('task');
     }

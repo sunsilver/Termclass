@@ -19,19 +19,19 @@
 
     <link href="{{asset('css/blog.css')}}" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Pacifico|Rubik+Mono+One&display=swap" rel="stylesheet">
+
 </head>
 
 
-<body id="page-top">
+<body style="padding:0;">
 
-    <div class="container">
+    <div class="container" style="">
 
-        <section class="Calender" id="">
-            <h3 class="openMarket mb-1">Schedule Calender</h3>
+        <section class="Calender">
+        <div class="title" style="">Schedule Calender</div>
             @include('schedule.index')
         </section>
-
-
 
     </div>
 

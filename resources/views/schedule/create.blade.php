@@ -19,15 +19,17 @@
 
     <link href="{{asset('css/blog.css')}}" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Pacifico|Rubik+Mono+One&display=swap" rel="stylesheet">
+
 </head>
 
 
-<body id="page-top">
+<body id="page-top" style="padding:0; background-image: url(/image/hero-bg2.png);">
 
     <div class="container">
 
-        <section class="Add" id="">
-            <h3 class="openMarket mb-1">Schedule Add</h3>
+        <section class="Calender" id="">
+        <div class="title" style="">Schedule Calender</div>
             @include('schedule.add')
         </section>
 

@@ -957,12 +957,12 @@ parallax & home seperator
     min-height: 140%;
     opacity: .95;
     background-repeat: no-repeat;
-    background-size: 50% 60%;
+    background-size: 60% 70%;
     background-position: center center;
     background-image: url(/image/bg2.jpg);
     z-index: 2;
     top: -25%;
-    left: -15%;
+    left: -20%;
 }
 
 .mini .mini-content {

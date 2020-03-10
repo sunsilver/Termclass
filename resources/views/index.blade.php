@@ -8,6 +8,7 @@
 <link rel="stylesheet" type="text/css" href="{{asset('css/templatemo-softy-pinko.css')}}">
 <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">
 <link rel="stylesheet" type="text/css" href="{{asset('css/font-awesome.css')}}">
+<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Pacifico|Rubik+Mono+One&display=swap" rel="stylesheet">
 @endsection
 
 @section('content')
@@ -18,12 +19,12 @@
     <div class="mini-content" style="height:100%;">
         <div class="container" style="height:100%;">
             <div class="row">
-                <div class="offset-lg-3 col-lg-6">
-                    <div class="info">
-                        <h3 style="color:navy; font-weight:bolder;">WORK PLACE</h3>
+                <!-- <div class="offset-lg-3 col-lg-6"> -->
+                    <!-- <div class="info"> -->
+                        <div style="font-family: 'Rubik Mono One', sans-serif; color:#0f62a7; font-size:50px; margin-left:7%;">WORK PLACE</div>
 
-                    </div>
-                </div>
+                    <!-- </div> -->
+                <!-- </div> -->
             </div>
 
             <!-- ***** Mini Box Start ***** -->
@@ -35,7 +36,7 @@
                     </a>
                 </div>
                 <div class="col-6" style="margin-left:1%; margin-top:6%;">
-                    <a href="{{ url('schedule.main') }}" class="mini-box" style="background-color:#0f62a7;">
+                    <a href="{{ url('schedule/main') }}" class="mini-box" style="background-color:#0f62a7;">
                         <i><img src="{{asset('image/event.png')}}" style="height:40px;" alt=""></i>
                         <strong style="color:white;">Schedule</strong>
                     </a>
@@ -45,13 +46,8 @@
             <!-- ***** Mini Box End ***** -->
         </div>
     </div>
-    <h3 class="features-title" style="align-items: center;
-display: flex;
-justify-content: center; color:#0f62a7;">A dream written down with a date becomes a goal.<br>
-    A goal broken down becomes a plan.<br>
-    A plan backed by action makes your dream come true.
-
-    – Greg S. Reid</h5>
+    <h3 class="features-title" style="margin-top:2%; font-family:'Pacifico', cursive; font-size:40px; align-items: center;display: flex; justify-content: center; color:#0f62a7;">
+    Setting goals is the first step in turning the invisible into the visible. - Anthony Robbins</h5>
 </section>
 
 

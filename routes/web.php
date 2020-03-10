@@ -71,6 +71,10 @@ Route::post('schedule/edit_form/{id}', function () {
     return view('schedule.edit_form');
 });
 
+Route::get('schedule/create', function () {
+    return view('schedule.create');
+});
+
 // Route::get('schedule/edit_form/{id}', 'TaskController@edit');
 
 // Route::delete('tasks/{id}', 'TaskController@destroy');
