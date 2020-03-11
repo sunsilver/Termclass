@@ -8,6 +8,10 @@ body {
     background-image: url(/image/hero-bg2.png);
 }
 
+/* .photo {
+    background-image: url(/image/sit.png);
+} */
+
 .title {
     align-items: center;
     display: flex;
